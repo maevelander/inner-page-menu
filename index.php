@@ -3,9 +3,9 @@
   Plugin Name: Inner Page Menu
   Plugin URI: https://wordpress.org/plugins/inner-page-menu
   Description: Add dynamic menus to your inner pages
-  Author: Enigma Plugins
-  Version: 1.0
-  Author URI: https://enigmaplugins.com
+  Author: Maeve Lander
+  Version: 1.1
+  Author URI: https://maevelander.net
 */
  
 //=========> Hide all Reporting Errors
@@ -86,4 +86,8 @@ function inner_page_menu() {
 		echo $ipm_menu_return;
 	}
 }
+
+//=========> Create shortcode [inner-page-menu]
+add_shortcode('inner-page-menu', 'inner_page_menu');
+
 ?>
